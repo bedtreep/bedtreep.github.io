@@ -186,16 +186,21 @@ body {
 	margin: 40px 0;
 }
 
-.loginandreg button, .button, .regform button {
+.button {
+	display: block;
+}
+
+.loginandreg button,.regform button, .button {
 	text-decoration: none;
 	color: black;
-	appearance: button;
 	border: 1px solid rgba(0,0,0,0.8);
 	box-sizing: border-box;
 	text-align: center;
 	width: 300px;
 	padding: 10px 0;
 }
+
+
 
 .loginandreg button:hover, .button:hover, .regform button:hover {
 	background-color: rgba(0,0,0,0.1);
