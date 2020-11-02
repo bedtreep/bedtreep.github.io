@@ -186,11 +186,11 @@ body {
 	margin: 40px 0;
 }
 
-.button {
+.button, .button-cont {
 	display: block;
 }
 
-.loginandreg button,.regform button, .button {
+.loginandreg button,.regform button, .button, .button-cont {
 	text-decoration: none;
 	color: black;
 	border: 1px solid rgba(0,0,0,0.8);
@@ -200,6 +200,11 @@ body {
 	padding: 10px 0;
 }
 
+.button-cont {
+	margin:0;
+	padding:0;
+	border:0;
+}
 
 
 .loginandreg button:hover, .button:hover, .regform button:hover {
