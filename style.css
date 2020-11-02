@@ -139,13 +139,13 @@ body {
 	font-weight: bold;
 }
 
-.loginandreg h2 {
+.loginandreg h2, .regform h2 {
 	font-size: 4em;
 	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
 }
 
-.loginandreg label, .loginandreg p, .loginandreg button {
+.loginandreg label, .loginandreg p, .loginandreg button, .button {
 	font-size: 1.5em;
 }
 
@@ -156,14 +156,15 @@ body {
 	margin-bottom: 10px;
 }
 
-.loginandreg input {
+.loginandreg input, .regform label input {
+	font-family: 'Raleway', sans-serif;
 	width: 300px;
 	height: 22px;
 	border: none;
 	border-bottom: 1px solid lightgrey;
 }
 
-.loginandreg input:focus {
+.loginandreg input:focus, .regform label input:focus {
 	outline: none;
 	border: none;
 	border-bottom: 1px solid black;
@@ -185,7 +186,10 @@ body {
 	margin: 40px 0;
 }
 
-.loginandreg button {
+.loginandreg button, .button, .regform button {
+	text-decoration: none;
+	color: black;
+	appearance: button;
 	border: 1px solid rgba(0,0,0,0.8);
 	box-sizing: border-box;
 	text-align: center;
@@ -193,16 +197,49 @@ body {
 	padding: 10px 0;
 }
 
-.loginandreg button:hover {
+.loginandreg button:hover, .button:hover, .regform button:hover {
 	background-color: rgba(0,0,0,0.1);
 	border-bottom: 2px solid rgba(0,0,0,0.8);
 }
 
-.loginandreg button:active {
+.loginandreg button:active, .button:active, .regform button:active; {
 	position: relative;
 	top: 2px;
 }
 
+.regform {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 15vh;
+	margin-bottom: 20vh;
+	height: 100%
+	
+}
+
+.regform label input{
+	margin: 5px 0;
+	width: 300px;
+}
+
+.regform label div {
+	margin: 5px 0;
+	font-size: 1.5em;
+	width: 300px;
+}
+
+#Accept{
+	width: fit-content;
+	margin: 5px;
+}
+
+.regform .accept div {
+	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
 
 .product-detailed div:only-child {
 	display: grid;
@@ -931,7 +968,7 @@ button {
 }
 
 @media (max-width: 1100px) {
-	#main, #shop, #collection, #about, #product, #account, #cart {
+	#main, #shop, #collection, #about, #product, #account, #cart, #registration {
 		font-size: 9px;
 	}
 	#main {
@@ -940,13 +977,13 @@ button {
 }
 
 @media (max-width: 922px) {
-	#main, #shop, #collection, #about, #account, #cart{
+	#main, #shop, #collection, #about, #account, #cart, #registration{
 		font-size: 8px;
 	}
 }
 
 @media (max-width: 819px) {
-	#main, #shop, #collection, #about, #account, #cart{
+	#main, #shop, #collection, #about, #account, #cart, #registration{
 		font-size: 7px;
 	}
 }
